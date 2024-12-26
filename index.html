@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #ffffff, #e8f4ff);
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: fadeIn 1s ease;
+        }
+        .header {
+            background: linear-gradient(120deg, #007bff, #00c6ff);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            position: relative;
+        }
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+        .name-title {
+            margin-left: 20px;
+        }
+        .name-title h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .name-title h2 {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 5px 0;
+        }
+        .name-title p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            background: #fff;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+        }
+        .section {
+            padding: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .section-title {
+            font-size: 20px;
+            color: #007bff;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        ul {
+            padding-left: 20px;
+            color: #555;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .skills,
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills span,
+        .hobbies span {
+            background: #007bff;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .contact-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #f8f9fa;
+            font-size: 12px;
+            color: #888;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .name-title {
+                margin-left: 0;
+            }
+            .header::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="https://1drv.ms/i/c/5c24657f4b8b741c/IQQDAHDmpw4sTrJ5EzfaVHdrAXyxh0UXAWDHoEcetRF-1IE?width=256" width="256" height="auto" />
+            <div class="name-title">
+                <h1>Vikas Nirmal</h1>
+                <h2>Web Developer | Tech Enthusiast</h2>
+                <p>Email: <a href="mailto:sidharth.roy@example.com" class="contact-links">sidharth.roy@example.com</a></p>
+                <p>Phone: <a href="tel:+919876543210" class="contact-links">+91 9876543210</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/sidharth-roy" target="_blank" class="contact-links">linkedin.com/in/sidharth-roy</a></p>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <p>A passionate and skilled web developer with expertise in creating dynamic, user-friendly websites and applications. Strong in both front-end and back-end development with an eye for detail and optimization.</p>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="section">
+            <div class="section-title">Work Experience</div>
+            <ul>
+                <li><strong>Web Developer</strong> - Tech Solutions (Jan 2020 - Present)</li>
+                <p>Developed high-performing e-commerce platforms and interactive dashboards using modern frameworks.</p>
+                <li><strong>Junior Developer</strong> - Dev Studio (Aug 2018 - Dec 2019)</li>
+                <p>Enhanced website functionality, leading to improved performance and user engagement.</p>
+            </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <p><strong>Bachelor of Technology (B.Tech)</strong> in Computer Science - ABC University (2014 - 2018)</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <div class="section-title">Skills</div>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+                <span>React</span>
+                <span>Git</span>
+            </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="section">
+            <div class="section-title">Hobbies & Interests</div>
+            <div class="hobbies">
+                <span>Photography</span>
+                <span>Traveling</span>
+                <span>Spirituality</span>
+                <span>Blogging</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            &copy; 2024 Sidharth Roy | All Rights Reserved
+        </div>
+    </div>
+</body>
+</html>

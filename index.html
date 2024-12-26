@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital CV</title>
+    <title>Digital Resume - Mechanical Engineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -11,7 +11,8 @@
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(120deg, #ffffff, #e8f4ff);
+            background: linear-gradient(120deg, #ffffff, #f0f8ff);
+            color: #333;
         }
         .container {
             max-width: 900px;
@@ -19,30 +20,32 @@
             background: #ffffff;
             border-radius: 15px;
             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
+            padding: 20px;
             animation: fadeIn 1s ease;
         }
         .header {
-            background: linear-gradient(120deg, #007bff, #00c6ff);
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
             padding: 20px;
             display: flex;
             align-items: center;
             color: #fff;
+            border-radius: 10px;
+            margin-bottom: 30px;
             position: relative;
         }
         .header img {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #fff;
+            border: 5px solid #fff;
         }
         .name-title {
             margin-left: 20px;
         }
         .name-title h1 {
             margin: 0;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: 700;
         }
         .name-title h2 {
@@ -60,7 +63,7 @@
             top: 0;
             right: 0;
             bottom: 0;
-            width: 100px;
+            width: 120px;
             background: #fff;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
         }
@@ -70,7 +73,7 @@
         }
         .section-title {
             font-size: 20px;
-            color: #007bff;
+            color: #1e3c72;
             margin-bottom: 10px;
             font-weight: 600;
         }
@@ -82,14 +85,16 @@
             margin-bottom: 8px;
         }
         .skills,
-        .hobbies {
+        .certifications,
+        .projects {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
         .skills span,
-        .hobbies span {
-            background: #007bff;
+        .certifications span,
+        .projects span {
+            background: #1e3c72;
             color: #fff;
             padding: 8px 15px;
             border-radius: 20px;
@@ -97,7 +102,7 @@
             font-weight: 500;
         }
         .contact-links a {
-            color: #007bff;
+            color: #1e3c72;
             text-decoration: none;
             font-weight: 500;
         }
@@ -141,10 +146,10 @@
     <div class="container">
         <!-- Header Section -->
         <div class="header">
-            <img src="https://1drv.ms/i/c/5c24657f4b8b741c/IQQDAHDmpw4sTrJ5EzfaVHdrAXyxh0UXAWDHoEcetRF-1IE?width=256" width="256" height="auto" />
+            <img src="https://1drv.ms/i/c/5c24657f4b8b741c/IQQDAHDmpw4sTrJ5EzfaVHdrAXyxh0UXAWDHoEcetRF-1IE?width=168&height=213" width="168" height="213" />
             <div class="name-title">
                 <h1>Vikas Nirmal</h1>
-                <h2>Web Developer | Tech Enthusiast</h2>
+                <h2>Mechanical Engineer | CAD Designer</h2>
                 <p>Email: <a href="mailto:sidharth.roy@example.com" class="contact-links">sidharth.roy@example.com</a></p>
                 <p>Phone: <a href="tel:+919876543210" class="contact-links">+91 9876543210</a></p>
                 <p>LinkedIn: <a href="https://linkedin.com/in/sidharth-roy" target="_blank" class="contact-links">linkedin.com/in/sidharth-roy</a></p>
@@ -154,55 +159,64 @@
         <!-- Professional Summary -->
         <div class="section">
             <div class="section-title">Professional Summary</div>
-            <p>A passionate and skilled web developer with expertise in creating dynamic, user-friendly websites and applications. Strong in both front-end and back-end development with an eye for detail and optimization.</p>
+            <p>Innovative and detail-oriented Mechanical Engineer with over 5 years of experience in product design, testing, and optimization. Proficient in CAD software and hands-on mechanical problem-solving. Aiming to leverage my expertise in design engineering to contribute to innovative solutions in mechanical systems.</p>
         </div>
 
         <!-- Work Experience -->
         <div class="section">
             <div class="section-title">Work Experience</div>
             <ul>
-                <li><strong>Web Developer</strong> - Tech Solutions (Jan 2020 - Present)</li>
-                <p>Developed high-performing e-commerce platforms and interactive dashboards using modern frameworks.</p>
-                <li><strong>Junior Developer</strong> - Dev Studio (Aug 2018 - Dec 2019)</li>
-                <p>Enhanced website functionality, leading to improved performance and user engagement.</p>
+                <li><strong>Lead Mechanical Engineer</strong> - ABC Corp. (Jan 2021 - Present)</li>
+                <p>Led a team in designing and optimizing mechanical systems for manufacturing equipment, resulting in a 15% increase in productivity.</p>
+                <li><strong>Mechanical Design Engineer</strong> - XYZ Technologies (Jun 2017 - Dec 2020)</li>
+                <p>Developed and tested mechanical prototypes for various consumer products, leading to three successful product launches.</p>
             </ul>
         </div>
 
         <!-- Education -->
         <div class="section">
             <div class="section-title">Education</div>
-            <p><strong>Bachelor of Technology (B.Tech)</strong> in Computer Science - ABC University (2014 - 2018)</p>
+            <p><strong>Bachelor of Technology (B.Tech)</strong> in Mechanical Engineering - ABC University (2013 - 2017)</p>
         </div>
 
         <!-- Skills -->
         <div class="section">
             <div class="section-title">Skills</div>
             <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>Bootstrap</span>
-                <span>React</span>
-                <span>Git</span>
+                <span>CAD</span>
+                <span>SolidWorks</span>
+                <span>AutoCAD</span>
+                <span>MATLAB</span>
+                <span>3D Modeling</span>
+                <span>Finite Element Analysis</span>
+                <span>Project Management</span>
+                <span>Prototyping</span>
             </div>
         </div>
 
-        <!-- Hobbies -->
+        <!-- Certifications -->
         <div class="section">
-            <div class="section-title">Hobbies & Interests</div>
-            <div class="hobbies">
-                <span>Photography</span>
-                <span>Traveling</span>
-                <span>Spirituality</span>
-                <span>Blogging</span>
+            <div class="section-title">Certifications</div>
+            <div class="certifications">
+                <span>Certified SolidWorks Professional</span>
+                <span>Six Sigma Green Belt</span>
+                <span>Project Management Professional (PMP)</span>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <div class="section-title">Key Projects</div>
+            <div class="projects">
+                <span>Design of Automated Packaging System</span>
+                <span>Development of High-Efficiency Heat Exchanger</span>
+                <span>Optimization of Manufacturing Line for Efficiency</span>
             </div>
         </div>
 
         <!-- Footer -->
         <div class="footer">
-            &copy; 2024 Sidharth Roy | All Rights Reserved
+            &copy; 2024 Vikas Nirmal | All Rights Reserved
         </div>
     </div>
 </body>
